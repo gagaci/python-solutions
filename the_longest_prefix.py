@@ -12,7 +12,7 @@ def longestCommonPrefix(words: list) -> str:
             if short[i] != word[i]:
                 return prefix
         # GGG: this the most important code in this solution, if short[i] and word[i] are equal,
-        # we assign all chars until i + 1 to the prefix by short[:i+1]
+        # we assign all chars until i + 1 to the prefix by short[:i+1] 
         prefix = short[:i+1]
     return short
 
